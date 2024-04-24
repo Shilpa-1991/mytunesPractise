@@ -1,0 +1,301 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    display: block;
+}
+body{
+    margin-left:4px;
+
+}
+header{
+    position: sticky;
+    top:0px;
+    background-color:#270082;
+    display: block;
+    border-top-left-radius: 6px;
+    z-index:50;
+}
+#top{
+    display:flex;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+}
+#toph3{
+    margin-left: 50px;
+      font-size:2em;
+    font-weight: 600;
+}
+header #top ul{
+list-style: none;
+display: flex;
+justify-content: space-around;
+gap:20px;
+margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: underline;
+    transition-duration: 0.9s;
+    transition-timing-function: ease-in;
+}
+.overview-section{
+    position: relative;
+    background-image: url(music.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    color: white;
+    place-items: center; 
+    /* y-axis in grid */
+}
+.overview-section h1{
+    font-size:4rem;
+    padding:15px;
+
+}
+.overview-section h3{
+    font-size: 2rem;
+    padding:15px;
+}
+.overview-section p{
+    margin-left: 60px;
+    padding:15px;
+    margin-right: 60px;
+    font-size: 1.3rem;
+}
+
+.music-section{
+    position: relative;
+    height: 100vh;
+    background-color:#270082;
+    background-size: 1000px;
+   
+    display: grid;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* place-items: center;    */
+    /* padding:50px; */
+}
+#container{
+    max-width: 1180px;
+    text-align: center;
+    margin:0 auto;
+    padding: 0 3rem;
+}
+.music-section h2{
+    margin-top:40px;
+    margin-bottom: 40px;
+    font-size: 2em;;
+}
+.music-section h4{
+font-size:1.3rem;
+display:block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+
+}
+.music-section button{
+    background-color: red;
+    font-size:15px;
+    color:white;
+    padding:10px;
+}
+.music-section p{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+ .music-section img{
+    width: 100%;
+    /* padding:0px; */
+    /* height: auto; */
+    /* overflow-clip-margin: content-box; */
+    /* overflow: clip; */
+}
+.video-section{
+    padding:4rem ;
+    position:relative;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    margin-top:82vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video-section h3{
+    /* font-size: 2rem; */
+    font-weight: bold;
+}
+.video-section p{
+    margin-top:30px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.about{
+    text-decoration: none;
+    padding:1rem;
+    display: inline-block;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background: #270082;
+    color:white;
+
+}
+
+.video-section  .iphone-img img{
+    width: 100%;
+}
+.entertainment{
+    background-image: url(back.jpg);
+    /* height: 100vh; */
+    padding: 10rem 0;
+    /* position: relative; */
+    margin-top:70vh;
+    color: white;
+    text-align: center;
+    /* display: grid; */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    align-items: center;
+}
+.entertainment h3{
+    font-size: 2rem;
+
+}
+.entertainment p{
+    font-size: 1.3rem;
+    margin-top:10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    /* text-align: justify; */
+}
+.gift{
+    /* height: 100vh; */
+    /* position: relative; */
+    margin-top:10vh;
+    background-color: white;
+    display: block;
+}
+ .gift-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+    text-align: justify;
+
+    
+}
+.gift-cards img{
+    overflow-clip-margin:content-box;
+    overflow: clip;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+footer{
+    background-color: #22026d;
+}
+footer .footer-cols {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    justify-content: space-between;
+  }
+  footer .footer-cols ul {
+    list-style: none;
+    line-height: 25px;
+  }
+footer .footer-cols ul li:first-child {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    margin-bottom: 6px;
+    padding-bottom: 2px;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 2px;
+  }
+  
+  footer .footer-bottom {
+    background-color: #2e0391;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+@media screen and (max-width: 768px) {
+    .overview-section #frontimgcont h1 {
+        font-size:40px;
+    }
+    .overview-section #frontimgcont h3 {
+        font-size:20px;
+    }
+    .overview-section #frontimgcont p {
+        font-size:16px;
+    }
+}
+@media screen  and (max-width:768px){
+    
+   .music-section .fafa-music{
+    font-size:16px;
+   }
+   .music-section h4{
+    font-size:15px;
+   }
+   .music-section p{
+    font-size:15px;
+   }
+
+    
+}
+@media screen and (max-width: 768px){
+    #container{
+        max-width: 590px;
+    }
+}
+@media screen and (max-width: 768px){
+    .video-section{
+        margin-top: 150px;
+        padding:2rem;
+    }
+    .entertainment{
+        margin-top: 150px;
+    padding:2rem ;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gift-cards {
+       grid-template-columns: 1fr; 
+    } 
+    .gift{
+        margin-top: 10vh;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    footer .footer-cols{
+        display: none;
+    }
+}
